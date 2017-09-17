@@ -4,7 +4,7 @@ using System.Text;
 
 namespace vehicleApp
 {
-    class Vehicle
+    public class Vehicle
     {
         public string registrationNumber { get; set; }
         public int enginePower { get; set; }

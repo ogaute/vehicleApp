@@ -6,7 +6,7 @@ using System.Text;
 
 namespace vehicleApp
 {
-    class Plane : Vehicle
+    public class Plane : Vehicle
     {
 
         public int wingSpan { get; set; }

@@ -6,7 +6,7 @@ using System.Text;
 
 namespace vehicleApp
 {
-    class Car : LandVehicle
+    public class Car : LandVehicle
     {
 
         public string color { get; set; }

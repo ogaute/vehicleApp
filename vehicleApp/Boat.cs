@@ -6,7 +6,7 @@ using System.Text;
 
 namespace vehicleApp
 {
-    class Boat : LandVehicle
+    public class Boat : LandVehicle
     {
 
         public int grossTonnage { get; set; }

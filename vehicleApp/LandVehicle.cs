@@ -4,7 +4,7 @@ using System.Text;
 
 namespace vehicleApp
 {
-    class LandVehicle : Vehicle
+    public class LandVehicle : Vehicle
     {
 
         public int maxSpeed { get; set; }
