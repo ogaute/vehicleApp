@@ -19,31 +19,5 @@ namespace vehicleApp
             this.weightUnit = weightUnit;
         }
 
-        public override string ToString()
-        {
-            return JsonConvert.SerializeObject(buildObject());
-
-        }
-
-        public void ToJsonFile()
-        {
-            string path = base.registrationNumber + ".txt";
-            File.WriteAllText(path, JsonConvert.SerializeObject(buildObject()), Encoding.UTF8);
-        }
-
-        private Dictionary<string, Object> buildObject()
-        {
-            return new Dictionary<string, Object>
-               {
-                    { "Registration", base.registrationNumber },
-                    { "EnginePower", base.enginePower },
-                    { "EnginePowerUnit", base.enginePowerUnit },
-                    { "MaxSpeed", base.maxSpeed },
-                    { "MaxSpeedUnit", base.maxSpeedUnit },
-                    { "GrossTonnage", this.grossTonnage },
-                    { "GrossTonnageUnit", this.weightUnit }
-
-               };
-        }
     }
 }
