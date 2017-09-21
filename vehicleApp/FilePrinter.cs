@@ -8,9 +8,9 @@ namespace vehicleApp
 {
     class FilePrinter
     {
-        public static void WriteJsonFile(Object dataObject, String path)
+        public static void WriteToFile(String path, String fileExtension, String content)
         {
-            File.WriteAllText(path, JsonConvert.SerializeObject(dataObject), Encoding.UTF8);
+            File.WriteAllText(path+fileExtension, content, Encoding.UTF8);
         }
     }
 }
